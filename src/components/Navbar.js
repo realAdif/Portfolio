@@ -3,8 +3,10 @@ import React from 'react';
 
 const styles = {
     background: {
-      background: '#F7B267',
-      hight: '200px'
+        background: '#F7B267',
+        hight: '200px',
+        justifyContent: "center",
+        fontSize: "20px"
     },
     
 };
