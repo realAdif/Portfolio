@@ -1,12 +1,10 @@
 import React from "react";
-import NavBar from './components/Navbar';
-import Homepage from './components/Homepage'
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App(){
     return(
         <div>
-            <NavBar/>
-            <Homepage/>
+            <PortfolioContainer/>
         </div>
     )
 }
