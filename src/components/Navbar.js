@@ -15,15 +15,15 @@ function Navbar({currentPages, handlePageChange}){
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                    <li className="nav-item active">
+                    <li className={currentPages === 'HomePage' ? 'nav-link active' : 'nav-link'}>
                         <a href='#HomePage' onClick={()=> handlePageChange('HomePage')} className="nav-link">Home</a>
                     </li>
 
-                    <li className="nav-item">
+                    <li className={currentPages === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
                         <a href='#Portfolio' onClick={()=> handlePageChange('Portfolio')} className="nav-link">Portfolio</a>
                     </li>
 
-                    <li className="nav-item">
+                    <li className={currentPages === 'Contact' ? 'nav-link active' : 'nav-link'}>
                         <a href='#Contact' onClick={()=> handlePageChange('Contact')} className="nav-link">Contact</a>
                     </li>
                     </ul>

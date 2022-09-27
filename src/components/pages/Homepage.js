@@ -7,7 +7,7 @@ const styles = {
     },
     
 };
-function HomePage(){
+export default function HomePage(){
     return(
         <div className="jumbotron jumbotron-fluid" style={styles.nav}>
             <div className="container">
@@ -18,4 +18,4 @@ function HomePage(){
     )
 }
 
-export default HomePage;
+ 
