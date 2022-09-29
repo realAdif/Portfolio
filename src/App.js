@@ -1,11 +1,12 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
-// import "./styles/App.css"
+import Footer from './components/Footer'
 
 function App(){
     return(
         <div>
             <PortfolioContainer />
+            <Footer/>
         </div>
     )
 }

@@ -1,19 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import '../styles/Navbar.css'
 
-const styles = {
-    background: {
-        background: '#F7B267',
-        hight: '200px',
-        justifyContent: "center",
-        fontSize: "20px"
-    },
-    
-};
 function Navbar({currentPages, handlePageChange}){
     return(
         <div >
-            <nav className="navbar navbar-expand-lg navbar-light" style={styles.background}>
+            <nav className="navbar navbar-expand-lg navbar-light background">
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 
