@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 const styles = {
     BackGround: {
-        background: '#F79D65',
+        background: '#4F4F4F',
         height: '130px'
     },
     Card:{
