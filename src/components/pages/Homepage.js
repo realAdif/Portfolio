@@ -42,7 +42,7 @@ export default function HomePage(){
                     Well-organised person, problem solver, independent employee with high attention to detail. 
                     Fan of MMA, outdoor activities, TV series and English literature. 
                     </p>
-                    <p>
+                    <p style={styles.text}>
                     Interested in the entire frontend spectrum and working on ambitious projects with positive people.
                     </p>
                     

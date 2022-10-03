@@ -11,14 +11,18 @@ const styles = {
         justify:"center"
     },
     FrontSide:{
-        backgroundColor: '#F25C54',
-        textAlign: 'center'
+        backgroundColor: '#4F4F4F',
+        textAlign: 'center',
+        color: 'aliceblue'
     },
     BackSide:{
-        backgroundColor: '#F27059'
+        backgroundColor: '#696969',
+        textAlign: 'center',
+        color: 'aliceblue'
     },
     text:{
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'aliceblue'
     }
     
 };
@@ -35,6 +39,63 @@ export default function Portfolio(){
             </div>
             <br/>
             <div>
+            <h1 style={styles.text}>Front-End</h1>
+                <Container>
+                <Row  align="center">
+                <Col>
+                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
+                    ref={ref} 
+                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                    >
+                    <FrontSide style={styles.FrontSide} >Tech-Blog<br/> </FrontSide>
+                    <BackSide style={styles.BackSide}>
+                    <a href='https://tech-blog-realadif.herokuapp.com/'>Link</a>
+                    <br/>
+                    Tech Blog is where you can make a account and start posting!!
+                    </BackSide>
+                </Flippy>
+                </Col>
+                <Col align="center">
+                <Flippy flipDirection="vertical" flipOnClick={true} flipOnHover={true} 
+                    ref={ref} 
+                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                    >
+                    <FrontSide style={styles.FrontSide}>Movie-Guide<br/> </FrontSide>
+                    <BackSide style={styles.BackSide}>
+                    <a href='https://moive-guide.herokuapp.com/'>Link</a>
+                    <br/>
+                      users to keep track of upcoming and movies that have recently released and with information on where to watch them.
+                    </BackSide>
+                </Flippy>
+                </Col>
+                <Col align="center">
+                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
+                    ref={ref} 
+                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                    >
+                    <FrontSide style={styles.FrontSide}>Weather-API<br/> </FrontSide>
+                    <BackSide style={styles.BackSide}>
+                    <a href='https://realadif.github.io/Weather-API/'>Link</a>
+                    <br/>
+                    Keep a track of the weather it!!
+                    </BackSide>
+                </Flippy>
+                </Col>
+                <Col align="center">
+                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
+                    ref={ref} 
+                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                    >
+                    <FrontSide style={styles.FrontSide}>Currency-Converter<br/> </FrontSide>
+                    <BackSide style={styles.BackSide}>
+                    <a href='https://realadif.github.io/Currency-Converter/'>Link</a>
+                    <br/>
+                     allowed the user to convert the currencies of their choice, but also gives the user an up-to-date news feed that they can browse.
+                    </BackSide>
+                </Flippy>
+                </Col>
+                </Row>
+                </Container>
                 <h1 style={styles.text}>Back-End</h1>
                 <Container>
                 <Row  align="center">
@@ -43,7 +104,7 @@ export default function Portfolio(){
                     ref={ref} 
                     style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
                     >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
+                    <FrontSide style={styles.FrontSide}> Social-Network-API <br/> </FrontSide>
                     <BackSide style={styles.BackSide}>
                         Link and information
                     </BackSide>
@@ -54,7 +115,7 @@ export default function Portfolio(){
                     ref={ref} 
                     style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
                     >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
+                    <FrontSide style={styles.FrontSide} >README-File-Generator <br/> </FrontSide>
                     <BackSide style={styles.BackSide}>
                         Link and information
                     </BackSide>
@@ -65,7 +126,7 @@ export default function Portfolio(){
                     ref={ref} 
                     style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
                     >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
+                    <FrontSide style={styles.FrontSide} >Team-Profile-Generator<br/> </FrontSide>
                     <BackSide style={styles.BackSide}>
                         Link and information
                     </BackSide>
@@ -76,7 +137,7 @@ export default function Portfolio(){
                     ref={ref} 
                     style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
                     >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
+                    <FrontSide style={styles.FrontSide} >Employee-Tracker<br/> </FrontSide>
                     <BackSide style={styles.BackSide}>
                         Link and information
                     </BackSide>
@@ -85,55 +146,7 @@ export default function Portfolio(){
                 </Row>
                 </Container>
                 <br/>
-                <h1 style={styles.text}>Front-End</h1>
-                <Container>
-                <Row  align="center">
-                <Col>
-                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
-                    ref={ref} 
-                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
-                    >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
-                    <BackSide style={styles.BackSide}>
-                        Link and information
-                    </BackSide>
-                </Flippy>
-                </Col>
-                <Col align="center">
-                <Flippy flipDirection="vertical" flipOnClick={true} flipOnHover={true} 
-                    ref={ref} 
-                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
-                    >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
-                    <BackSide style={styles.BackSide}>
-                        Link and information
-                    </BackSide>
-                </Flippy>
-                </Col>
-                <Col align="center">
-                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
-                    ref={ref} 
-                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
-                    >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
-                    <BackSide style={styles.BackSide}>
-                        Link and information
-                    </BackSide>
-                </Flippy>
-                </Col>
-                <Col align="center">
-                <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
-                    ref={ref} 
-                    style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
-                    >
-                    <FrontSide style={styles.FrontSide} >Project Name <br/> </FrontSide>
-                    <BackSide style={styles.BackSide}>
-                        Link and information
-                    </BackSide>
-                </Flippy>
-                </Col>
-                </Row>
-                </Container>
+                
             </div>
         </div>
     );
