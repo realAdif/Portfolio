@@ -10,15 +10,19 @@ function Navbar({currentPages, handlePageChange}){
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 
                     <li className={currentPages === 'HomePage' ? 'nav-link active' : 'nav-link'}>
-                        <a href='#HomePage' onClick={()=> handlePageChange('HomePage')} className="nav-link">Home</a>
+                        <a href='#HomePage' onClick={()=> handlePageChange('HomePage')} className="nav-link">ABOUT-ME</a>
                     </li>
 
                     <li className={currentPages === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
-                        <a href='#Portfolio' onClick={()=> handlePageChange('Portfolio')} className="nav-link">Portfolio</a>
+                        <a href='#Portfolio' onClick={()=> handlePageChange('Portfolio')} className="nav-link">PORTFOLIO</a>
                     </li>
 
                     <li className={currentPages === 'Contact' ? 'nav-link active' : 'nav-link'}>
-                        <a href='#Contact' onClick={()=> handlePageChange('Contact')} className="nav-link">Contact</a>
+                        <a href='#Contact' onClick={()=> handlePageChange('Contact')} className="nav-link">CONTACT</a>
+                    </li>
+
+                    <li className={currentPages === 'Contact' ? 'nav-link active' : 'nav-link'}>
+                        <a href='#Resume' onClick={()=> handlePageChange('Resume')} className="nav-link">RESUME</a>
                     </li>
                     </ul>
                 </div>

@@ -4,6 +4,7 @@ import HomePage from "./pages/Homepage";
 import Protfolio  from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Footer from './Footer'
+import Resume from "./pages/Resume";
 import '../styles/page.css'
 
 
@@ -16,7 +17,10 @@ export default function PortfolioContainer(){
         if(currentPage === 'Portfolio'){
             return <Protfolio/>
         }
-        return <Contact/>
+        if(currentPage === 'Contact'){
+            return <Contact/>
+        }
+        return <Resume/>
         
     }
     return(

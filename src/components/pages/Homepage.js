@@ -1,5 +1,4 @@
 import React from "react";
-
 const styles = {
     background: {
         background: '#4F4F4F',
@@ -16,8 +15,14 @@ const styles = {
     },
     text:{
         textAlign: 'center',
-        color: 'aliceblue'
+        color: 'aliceblue',
+        textDecoration: 'underline'
     },
+    AboutMeText:{
+        textAlign: 'center',
+        color: 'aliceblue',
+        fontSize: '25px'
+    }
     
     
 };
@@ -27,23 +32,24 @@ export default function HomePage(){
         
         <div className="jumbotron jumbotron-fluid" style={styles.background}>
             <div className="container">
-                <h1 className="display-4"style={styles.text}>Wellcome</h1>
-                <p className="lead" style={styles.text}>Portfolio of Aditya Gaikwad</p>
+                <h1 className="display-4"style={styles.text}>About Me</h1>
             </div>
             <br/>
-            <div >
-                <h2 style={styles.text}>About Me</h2>
-                <div style={styles.background1}>
-                    <p style={styles.text}>
-                    I’m a Front-End Developer located in Australia. I have a serious passion for UI effects, 
-                    animations and creating intuitive, dynamic user experiences.
+            <br/>
+            <div>
+                <br/>
+                <div>
+                    <p style={styles.AboutMeText}>
+                    Hi, I'm Aditya Gaikwad. I am a full-stack developer based in Sydney, Australia. 
                     </p>
-                    <p style={styles.text}>
-                    Well-organised person, problem solver, independent employee with high attention to detail. 
-                    Fan of MMA, outdoor activities, TV series and English literature. 
+                    <p style={styles.AboutMeText}>
+                    I'm seriously passionate about programming and making engaging, dynamic user interfaces.
                     </p>
-                    <p style={styles.text}>
-                    Interested in the entire frontend spectrum and working on ambitious projects with positive people.
+                    <p style={styles.AboutMeText}>
+                    I have also experimented using C#. I do use the Unity engine to create my own games, and I participate in GameJams. 
+                    </p>
+                    <p style={styles.AboutMeText}>
+                    I am a detail-oriented, independent worker who is well-organized and able to solve problems. 
                     </p>
                     
                 </div>
