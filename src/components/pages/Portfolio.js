@@ -3,6 +3,9 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import { Container, Row, Col } from 'react-grid-system';
 
 const styles = {
+    mainPage:{
+        margin:'30px'
+    },
     BackGround: {
         background: '#4F4F4F',
         height: '130px'
@@ -44,7 +47,7 @@ const styles = {
 export default function Portfolio(){
     const ref = useRef();
     return(
-        <div>
+        <div >
             <div className="jumbotron jumbotron-fluid" style={styles.BackGround}>
                 <div className="container">
                     <h1 className="display-4" style={styles.text}>PORTFOLIO</h1>
@@ -52,7 +55,7 @@ export default function Portfolio(){
                 
             </div>
             <br/>
-            <div>
+            <div style={styles.mainPage}>
             <h1 style={styles.text}>Front-End</h1>
                 <Container>
                 <Row  align="center">
@@ -126,12 +129,11 @@ export default function Portfolio(){
                 </Container>
 
                 <h1 style={styles.text}>Back-End</h1>
-
+                <br/>
                 <Container>
                 <Row  align="center">
-                <Col>
-                <br/>
-
+                <Col >
+ 
                 <Flippy flipDirection="horizontal" flipOnClick={true} flipOnHover={true} 
                     ref={ref} 
                     style={{ width: '220px', height: '350px' }} /// these are optional style, it is not necessary

@@ -1,4 +1,6 @@
 import React from "react";
+import profilePhoto from './AdityaMe.jpg';
+
 const styles = {
     background: {
         background: '#4F4F4F',
@@ -22,6 +24,13 @@ const styles = {
         textAlign: 'center',
         color: 'aliceblue',
         fontSize: '25px'
+    },
+    photo:{
+        width:"196px",
+        borderRadius: "60px",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto"
     }
     
     
@@ -33,7 +42,10 @@ export default function HomePage(){
         <div className="jumbotron jumbotron-fluid" style={styles.background}>
             <div className="container">
                 <h1 className="display-4"style={styles.text}>About Me</h1>
+                
+                <br/>
             </div>
+            
             <br/>
             <br/>
             <div>
@@ -53,6 +65,7 @@ export default function HomePage(){
                     </p>
                     
                 </div>
+                <img src={profilePhoto} style={styles.photo} alt="profile" />
             </div>
         </div>
        
