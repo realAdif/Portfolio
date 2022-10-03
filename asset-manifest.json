@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a5b0065e.css",
+    "main.js": "/Portfolio/static/js/main.ca5d46f1.js",
+    "static/media/AdityaMe.jpg": "/Portfolio/static/media/AdityaMe.267ccbcb5eaf6a5674a4.jpg",
+    "static/media/Aditya.pdf": "/Portfolio/static/media/Aditya.68943c73d7174dca9424.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.a5b0065e.css.map": "/Portfolio/static/css/main.a5b0065e.css.map",
+    "main.ca5d46f1.js.map": "/Portfolio/static/js/main.ca5d46f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5b0065e.css",
+    "static/js/main.ca5d46f1.js"
+  ]
+}
